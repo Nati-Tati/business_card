@@ -62,3 +62,46 @@ span {
     margin: 5px;
     font-weight: bold;
 }
+
+/* Smartphones: bis 600px */
+@media (max-width: 600px) {
+    body {
+            min-height: 100dvh;
+            min-height: 100vh;
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+
+    .business-card {
+        width: 94vw;
+        padding: 12px;
+        font-size: 14px;
+        margin-top: 20px;
+        border-radius: 6px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    }
+
+    .profile-image {
+        border-radius: 12%;
+        max-width: 80vw;
+        height: auto;
+    }
+
+    .social-media {
+        font-size: 1.1em;
+    }
+
+    p,
+    span {
+        font-size: 1em;
+    }
+}
+
+/* Optional: Bessere Touch-Ziele für Links auf mobilen Geräten */
+@media (max-width: 600px) {
+    a {
+        padding: 6px 0;
+        display: inline-block;
+        font-size: 1.08em;
+    }
+}
