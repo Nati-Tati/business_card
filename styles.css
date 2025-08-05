@@ -1,0 +1,116 @@
+html {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: rosybrown;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+        /* только если контента мало */
+    padding: 1rem;
+    
+    }
+
+.business-card {
+    max-width: 300px;
+    background-color: #FFEFD5;
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+    font-size: 16px;
+    border: solid 2px #4B0082;
+    border-radius: 2%;
+    overflow: hidden;
+    
+}
+
+p {
+    margin: 5px 0;
+}
+
+a {
+    text-decoration: none;
+    color: #4B0082;
+}
+
+.profile-image {
+    max-width: 100%;
+    border: solid 2px #DEB887;
+    border-radius: 4%;
+}
+
+.designation {
+    color: #708090;
+}
+
+.company {
+    color: #778899;
+}
+
+.email>span,
+.tel>span {
+    color: black;
+    font-weight: normal;
+}
+
+.email {
+    color: #6A5ACD;
+}
+
+.tel {
+    color: #6A5ACD;
+}
+
+.social-media {
+    text-align: center;
+}
+
+
+span {
+    margin: 5px;
+    font-weight: bold;
+}
+
+
+
+/* Mobile: адаптивность */
+@media (max-width: 480px) {
+    body {
+            min-height: auto;
+            height: auto;
+            align-items: flex-start;
+            padding-top: 1.5rem;
+        }
+        
+    .business-card {
+        width: 100%;
+        max-width: 95vw;
+        margin-top: 2rem;
+        font-size: 15px;
+    }
+
+    .profile-image {
+        width: 80vw;
+        height: auto;
+        border-radius: 12px;
+    }
+
+    p,
+    span {
+        font-size: 1em;
+    }
+
+    .social-media {
+        font-size: 1.1em;
+    }
+}
+
+/* Better touch targets for links */
+@media (max-width: 600px) {
+    a {
+        font-size: 1.08em;
+    }
+}
